@@ -33,4 +33,24 @@ void main() {
   for (var angka in daftarAngka) {
     print(angka);
   }
+
+  print(fungsiAngkaHitungTambah(5, 5));
+  fungsiAngkaHitungKurang(7, 5);
+  buatUser(namaUser: 'Leona', umurUser: 20);
+}
+
+// function
+// fungsi og
+int fungsiAngkaHitungTambah(int a, int b) {
+  return a + b;
+}
+
+// fungsi singkat
+int fungsiAngkaHitungKurang(int a, int b) => a - b;
+
+void kurang() {}
+
+// fungsi parameter name
+void buatUser({required String namaUser, required int umurUser}) {
+  print('Nama: $namaUser, umur: $umurUser');
 }
