@@ -1,3 +1,5 @@
+// import 'dart:ffi';
+
 void main() {
   var yourGrade = 676;
 
@@ -19,5 +21,16 @@ void main() {
 
   for (var i = 0; i <= 10; i++) {
     print('angke ke $i');
+  }
+
+  // for in loop
+  List<String> framework = ['Laravel', 'Vue', 'Flutter'];
+  for (String item in framework) {
+    print(item);
+  }
+
+  List<int> daftarAngka = [10, 3, 45, 11, 9];
+  for (var angka in daftarAngka) {
+    print(angka);
   }
 }
