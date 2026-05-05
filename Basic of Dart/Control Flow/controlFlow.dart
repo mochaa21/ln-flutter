@@ -1,5 +1,5 @@
 void main() {
-  var yourGrade = 2059;
+  var yourGrade = 676;
 
   if (yourGrade >= 5000) {
     print('Your grade is S');
@@ -11,6 +11,8 @@ void main() {
     print('Your grade is C');
   } else if (yourGrade >= 1000) {
     print('Your grade is D');
+  } else if (yourGrade <= 1000) {
+    print('Your grade is D towards degradation!');
   } else if (yourGrade <= 500) {
     print("you're dropout...");
   }
