@@ -16,4 +16,8 @@ void main() {
   } else if (yourGrade <= 500) {
     print("you're dropout...");
   }
+
+  for (var i = 0; i <= 10; i++) {
+    print('angke ke $i');
+  }
 }
