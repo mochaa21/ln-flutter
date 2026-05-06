@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Mochammad Syahid',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'AbyLeo Flutter Demo Project'),
     );
   }
 }
@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times:'),
+            const Text('Kamu Sudah mengklik ini sebanyak:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -118,5 +118,41 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.add),
       ),
     );
+  }
+}
+
+class judulAplikasi extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return const Text('Aplikasi Pertamaku');
+  }
+}
+
+class PageAplikasi extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return const Text('ini adalah text dari widget PageAplikasi');
+  }
+}
+
+class TombolLike extends StatefulWidget {
+  @override
+  _TombolLikeState createState() => _TombolLikeState();
+}
+
+class _TombolLikeState extends State<TombolLike> {
+  int jumlahLike = 0; // state
+
+  void TambahLike() {
+    setState(() {
+      jumlahLike++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Text('Jumlah Like: $jumlahLike');
   }
 }
